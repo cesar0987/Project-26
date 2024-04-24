@@ -1,45 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <title>Weather Forecast</title>
 </head>
-<body> 
+
+<body>
     <div class="cookies">
         <img src="./assets/cookie.png" alt="cookies">
         <div class="cookiesText">
-        <span><b>Stop!Cookie time</b></span>
-        <p>We use cookies(sadly not the edible ones)to personalize content and ads, to providee social media featurs and analyze our traffic. <a href="#">Read more..</a></p>
+            <span><b>Stop!Cookie time</b></span>
+            <p>We use cookies(sadly not the edible ones)to personalize content and ads, to providee social media featurs
+                and analyze our traffic. <a href="#">Read more..</a></p>
         </div>
-        <button>I Accept</button>
+        <button class="cookiesButton" onclick="acceptCookies()">I Accept</button>
     </div>
     <nav class="navBar">
-    <div class="container">
-        <div class="navText">
-            <span>DojoWeather</span>
-            <ul>
-                <li>Burbank</li>
-                <li>Chicago</li>
-                <li>Dallas</li>
-            </ul>
+        <div class="container">
+            <div class="navText">
+                <span>DojoWeather</span>
+                <ul>
+                    <li onclick="alertPag()">Burbank</li>
+                    <li onclick="alertPag()">Chicago</li>
+                    <li onclick="alertPag()">Dallas</li>
+                </ul>
+            </div>
         </div>
-    </div>
     </nav>
     <main class="container">
         <div class="bodyContainer">
             <div class="headerContainer">
                 <span>San Jose</span>
                 <div class="temperature">
-                <p>show temperature in</p>
-                <select name="temTipe" onchange="">
-                    <option value="celsius">C°</option>
-                    <option value="fahrenheit">F°</option>
-                </select>
+                    <p>show temperature in</p>
+                    <select name="temTipe" onchange="changeTemp(this)">
+                        <option value="celsius">C°</option>
+                        <option value="fahrenheit">F°</option>
+                    </select>
                 </div>
             </div>
             <div class="dayWeather">
@@ -48,8 +53,8 @@
                     <img src="./assets/some_rain.png" alt="some_rain">
                     <p><b>some rain</b></p>
                     <div class="temperature">
-                    <span class="maxTemp"><b>24°</b></span>
-                    <span class="minTemp"><b>18°</b></span>
+                        <span class="maxTemp" id="temp1">24°</span>
+                        <span class="minTemp" id="temp2">18°</span>
                     </div>
                 </div>
                 <div class="day tomorrow">
@@ -57,35 +62,36 @@
                     <img src="./assets/some_sun.png" alt="some_sun">
                     <p><b>some sun</b></p>
                     <div class="temperature">
-                        <span class="maxTemp"><b>27°</b></span>
-                        <span class="minTemp"><b>18°</b></s>
+                        <span class="maxTemp" id="temp3">27°</span>
+                        <span class="minTemp" id="temp4">18°</s>
                     </div>
-                    
+
                 </div>
                 <div class="day friday">
-                    <span class="dayText"s>Friday</span>
+                    <span class="dayText" s>Friday</span>
                     <img src="./assets/some_clouds.png" alt="some_clouds">
                     <p><b>some clouds</b></p>
                     <div class="temperature">
-                    <span class="maxTemp"><b>27°</b></span>
-                    <span class="minTemp"><b>18°</b></span>
+                        <span class="maxTemp" id="temp5">27°</span>
+                        <span class="minTemp" id="temp6">18°</span>
                     </div>
-                    
+
                 </div>
                 <div class="day saturday">
                     <span class="dayText">Saturday</span>
                     <img src="./assets/some_sun.png" alt="some_sun">
                     <p><b>some sun</b></p>
                     <div class="temperature">
-                    <span class="maxTemp"><b>27°</b></span>
-                    <span class="minTemp"><b>18°</b></span>
+                        <span class="maxTemp" id="temp7">27°</span>
+                        <span class="minTemp" id="temp8">18°</span>
                     </div>
-                    
+
                 </div>
             </div>
-           
+
         </div>
     </main>
     <script src="./scrypt.js"></script>
 </body>
-</html> 
+
+</html>

@@ -1,160 +1,157 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    font-family:'Roboto',sans-serif;
+body {
+  font-family: "Roboto", sans-serif;
 }
-.cookies{
-    display: grid;
-    grid-template-columns:1fr 4fr 1fr;
-    width: 900px;
-    height: 100px;
-    padding-inline: auto;
-    margin-inline: auto;
-    padding: 10px;
-    border: 4px solid black;
-    align-items: center;
-    position: fixed;
-    bottom: 0;
-    left: 250px;
-    background-color: antiquewhite;
+.cookies {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  width: 900px;
+  height: 100px;
+  padding-inline: auto;
+  margin-inline: auto;
+  padding: 10px;
+  border: 4px solid black;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 250px;
+  background-color: antiquewhite;
 }
-.cookies img{
-    width: 100px;
-    height: 90px ;
+.cookies img {
+  width: 100px;
+  height: 90px;
 }
-.cookies .cookiesButton{
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80px;
-    height: 40px;
-    border: 3px solid black;
-    background-color: #a8d1ff;
-    box-shadow: 5px 5px;
+.cookies .cookiesButton {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 40px;
+  border: 3px solid black;
+  background-color: #a8d1ff;
+  box-shadow: 5px 5px;
 }
-.cookies .cookiesText{
-    display: flex;
-    height: 100%;
-    width: 540px;
-    justify-content: flex-start;
-    flex-direction: column;
+.cookies .cookiesText {
+  display: flex;
+  height: 100%;
+  width: 540px;
+  justify-content: flex-start;
+  flex-direction: column;
 }
-.container{
-    box-sizing: border-box;
-    max-width: 900px;
-    margin-inline: auto;
-    padding-inline: auto;
-    
+.container {
+  box-sizing: border-box;
+  max-width: 900px;
+  margin-inline: auto;
+  padding-inline: auto;
 }
-.navBar{
-    box-sizing: border-box;
-    background-color: #9ec5f7;
-    width: 100%;
-    
+.navBar {
+  box-sizing: border-box;
+  background-color: #9ec5f7;
+  width: 100%;
 }
-.navBar .container .navText{
-    box-sizing: border-box;
-    width: 100%;
-    height: 80px ;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
+.navBar .container .navText {
+  box-sizing: border-box;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
 }
 
-.navBar .container .navText span{
-    color: aliceblue;
-    font-size: 40px;
+.navBar .container .navText span {
+  color: aliceblue;
+  font-size: 40px;
 }
 
 .navBar .container .navText ul {
-    display: flex;
-    flex-direction: row;
-    gap:20px;
-    list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  list-style: none;
 }
-.navBar .container .navText ul li{
-    cursor: pointer;
-    font-size: 25px;
-    color: aliceblue;
-}
-
-.container .bodyContainer{
-
+.navBar .container .navText ul li {
+  cursor: pointer;
+  font-size: 25px;
+  color: aliceblue;
 }
 
-.container .bodyContainer .headerContainer{
-    box-sizing: border-box;
-    padding: 0 20px;
-    width: 100%;
-    height: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 5px solid black;
+.container .bodyContainer {
 }
 
-.container .bodyContainer .headerContainer .temperature{
-    display: flex;
-    flex-direction: row;
-    gap: 10px
+.container .bodyContainer .headerContainer {
+  box-sizing: border-box;
+  padding: 0 20px;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 5px solid black;
 }
 
-.container .bodyContainer .headerContainer span{
-    font-size: 30px;
-    
+.container .bodyContainer .headerContainer .temperature {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
 
-.container .bodyContainer .dayWeather{
-    background-color: #ededed;
-    box-sizing: border-box;
-    width: 100%;
-    height: 300px;
-    display: grid;
-    grid-template-columns:repeat(4,1fr);    
+.container .bodyContainer .headerContainer span {
+  font-size: 30px;
 }
 
-
-.container .bodyContainer .dayWeather .day{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.container .bodyContainer .dayWeather {
+  background-color: #ededed;
+  box-sizing: border-box;
+  width: 100%;
+  height: 300px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
-.container .bodyContainer .dayWeather .day img{
-    width: 200px;
-    height: 200px;
-    border-radius:50%;
-    padding: 40px 0;
+.container .bodyContainer .dayWeather .day {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.container .bodyContainer .dayWeather .day .dayText{
-    padding: 20px 0;
-    font-size: 30px;
+.container .bodyContainer .dayWeather .day img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  padding: 40px 0;
 }
 
-.container .bodyContainer .dayWeather .day .temperature{
-    width: 150px;
-    display: flex;
-    justify-content: space-between;
-    padding: 40px 0 ;
-    font-size: 25px;
+.container .bodyContainer .dayWeather .day .dayText {
+  padding: 20px 0;
+  font-size: 30px;
 }
 
-.container .bodyContainer .dayWeather .day  .maxTemp{
-    color: red;
+.container .bodyContainer .dayWeather .day .temperature {
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0;
+  font-size: 25px;
 }
 
-.container .bodyContainer .dayWeather .day  .minTemp{
-    color: blue
+.container .bodyContainer .dayWeather .day .maxTemp {
+  color: red;
+  font-weight: bold;
 }
 
-.cookiesExtra{
-    display:none;
+.container .bodyContainer .dayWeather .day .minTemp {
+  color: blue;
+  font-weight: bold;
+}
+
+.cookiesExtra {
+  display: none;
 }
